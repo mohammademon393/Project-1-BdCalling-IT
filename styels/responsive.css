@@ -1,0 +1,86 @@
+/* Responsive */
+
+/* header css */
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 4%;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .cart {
+        font-size: 17px;
+    }
+
+    .hero-content h1 br,
+    .hero-content p br {
+        display: none;
+    }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero-content {
+        padding-top: 50px;
+    }
+}
+
+
+        /*************** main part css ***********/
+/* =================================================== */
+
+/* --------------choosing part---------------- */
+/* Tablet Responsive */
+@media (max-width: 768px) {
+    .why-container {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .why-title {
+        flex-basis: 100%;
+    }
+
+    .why-card {
+        flex: 1 1 40%;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .why-section {
+        padding: 40px 6%;
+    }
+
+    .why-title h2 {
+        font-size: 28px;
+    }
+
+    .why-card {
+        flex: 1 1 100%;
+    }
+}

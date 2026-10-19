@@ -144,48 +144,83 @@ body {
     cursor: pointer;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 20px 4%;
-    }
+/* the end header part css */
 
-    .nav-menu {
-        gap: 12px;
-    }
 
-    .nav-menu a {
-        font-size: 10px;
-    }
+/**************** start main part css *****************/
+    /* =============================================== */
 
-    .logo {
-        font-size: 20px;
-    }
-
-    .cart {
-        font-size: 17px;
-    }
-
-    .hero-content h1 br,
-    .hero-content p br {
-        display: none;
-    }
+/* choosing section */
+/* Common Row */
+.row {
+    display: flex;
+    align-items: center;
 }
 
-@media (max-width: 480px) {
-    .navbar {
-        flex-wrap: wrap;
-        gap: 18px;
-    }
-
-    .nav-menu {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .hero-content {
-        padding-top: 50px;
-    }
+/* Why Choosing Us */
+.why-section {
+    padding: 70px 6%;
+    background: #fff;
 }
+
+.why-container {
+    justify-content: space-between;
+    gap: 35px;
+}
+
+/* Left Heading */
+.why-title {
+    flex: 1.2;
+}
+
+.why-title h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #1f1f1f;
+}
+
+/* Feature Cards */
+.why-card {
+    flex: 1;
+}
+
+.why-card h3 {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: #252525;
+}
+
+.why-card p {
+    font-size: 10px;
+    line-height: 1.8;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.why-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #e58411;
+    font-size: 10px;
+}
+
+.why-card a i {
+    transition: transform 0.3s;
+}
+
+.why-card a:hover i {
+    transform: translateX(5px);
+}
+
+
+
+
+
+
+
