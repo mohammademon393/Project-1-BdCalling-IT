@@ -84,3 +84,45 @@
         flex: 1 1 100%;
     }
 }
+
+
+/* ---------- Best Selling Products ---------- */
+/* Tablet */
+@media (max-width: 768px) {
+    .product-row {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .product-card {
+        flex: 1 1 calc(50% - 18px);
+    }
+
+    .product-image {
+        height: 220px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .product-section {
+        padding: 40px 5%;
+    }
+
+    .product-heading {
+        font-size: 26px;
+    }
+
+    .product-card {
+        flex: 1 1 100%;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    .category-menu a {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+}
