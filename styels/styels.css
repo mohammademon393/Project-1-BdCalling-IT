@@ -386,4 +386,147 @@ body {
 
 
 
+/* Experience Section */
+.experience-section {
+    padding: 80px 0;
+    background: #ffffff;
+    overflow: hidden;
+}
 
+.experience-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Common Row */
+.experience-row,
+.materials-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* First Row */
+.experience-row {
+    margin-bottom: 100px;
+}
+
+/* Experience Image */
+.experience-image {
+    flex: 1.2;
+    min-width: 0;
+    height: 320px;
+    position: relative;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Experience Text */
+.experience-content {
+    flex: 1;
+    padding: 20px 6% 20px 0;
+}
+
+.section-label {
+    display: block;
+    color: #e58411;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.experience-content h2,
+.materials-content h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #1f1f1f;
+    margin-bottom: 15px;
+}
+
+.experience-content p,
+.materials-content p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #777777;
+    margin-bottom: 15px;
+}
+
+.more-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #e58411;
+    font-size: 12px;
+}
+
+.more-info i {
+    transition: transform 0.3s ease;
+}
+
+.more-info:hover i {
+    transform: translateX(5px);
+}
+
+/* Second Row */
+.materials-row {
+    gap: 50px;
+}
+
+/* Materials Text */
+.materials-content {
+    flex: 0.8;
+    padding-left: 6%;
+}
+
+/* Materials Images */
+.materials-images {
+    flex: 1.5;
+    min-width: 0;
+    align-items: stretch;
+    gap: 20px;
+}
+
+/* Small Images */
+.small-images {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.small-images img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Large Image */
+.large-image {
+    flex: 1.2;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+}
+
+.large-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+}
