@@ -1,0 +1,191 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Reusable Row */
+.row {
+    display: flex;
+    align-items: center;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+        url("assets/hero.jpg") center / cover no-repeat;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 25px 6%;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Navigation */
+.nav-menu {
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #f3a84b;
+}
+
+.dropdown i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+/* Shopping Cart */
+.cart {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    background: #f39c32;
+    color: white;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* Hero Content */
+.hero-content {
+    text-align: center;
+    padding: 25px 15px 50px;
+}
+
+.hero-content h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 25px auto;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.search-box input {
+    flex: 1;
+    width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    color: white;
+}
+
+.search-box input::placeholder {
+    color: #ddd;
+    font-size: 11px;
+}
+
+.search-box button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: #f39c32;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 4%;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .cart {
+        font-size: 17px;
+    }
+
+    .hero-content h1 br,
+    .hero-content p br {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero-content {
+        padding-top: 50px;
+    }
+}
