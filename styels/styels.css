@@ -88,6 +88,10 @@ body {
     align-items: center;
     border-radius: 50%;
 }
+/* hidden menu */
+.hidden-menu {
+    display: none;
+}
 
 /* Hero Content */
 .hero-content {

@@ -1,4 +1,4 @@
-/* Responsive */
+/* All Responsive  releted css herer*/
 
 /* header css */
 
@@ -10,6 +10,7 @@
 
     .nav-menu {
         gap: 12px;
+        /* margin-top: -60px; */
     }
 
     .nav-menu a {
@@ -38,11 +39,22 @@
     }
 
     .nav-menu {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
+        display: none;
     }
+    .cart{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+        .cart-count{
+            margin-right: 30px;
+        }
+    .hidden-menu {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
 
     .hero-content {
         padding-top: 50px;
