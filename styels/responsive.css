@@ -228,3 +228,55 @@
         height: 242px;
     }
 }
+
+
+/* ===================================================
+   3. RESPONSIVE MEDIA QUERIES (TABLET & MOBILE)
+   =================================================== */
+
+/* Tablet Devices (max-width: 992px) */
+@media (max-width: 992px) {
+    .reviews-grid {
+        justify-content: center;
+    }
+
+    .review-card {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    .footer-grid {
+        gap: 30px;
+    }
+}
+
+/* Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 28px;
+    }
+
+    .review-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .brand-col {
+        min-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column-reverse;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .legal-links a {
+        margin: 0 10px;
+    }
+}
